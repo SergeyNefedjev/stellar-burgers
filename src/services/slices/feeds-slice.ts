@@ -9,7 +9,7 @@ export type TFeedsState = {
   total: number;
   error: string;
 };
-const initialState: TFeedsState = {
+export const initialState: TFeedsState = {
   orders: [],
   totalToday: 0,
   isLoading: false,
