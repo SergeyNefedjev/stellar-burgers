@@ -10,13 +10,14 @@ import {
   useSelector as selectorHook
 } from 'react-redux';
 
-const rootReducer = combineSlices(
+export const rootReducer = combineSlices(
   ingredientsSlice,
   constructorSlice,
   feedsSlice,
   orderSlice,
   userSlice
 ); // Заменить на импорт настоящего редьюсера
+
 const store = configureStore({
   reducer: rootReducer,
   devTools: process.env.NODE_ENV !== 'production'

@@ -21,7 +21,7 @@ type TUserState = {
   userOrders: TOrder[];
 };
 
-const initialState: TUserState = {
+export const initialState: TUserState = {
   user: null,
   isLoadingRegistration: false,
   isLoadingOrder: false,
